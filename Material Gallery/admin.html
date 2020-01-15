@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Admin</title>
+      <link rel="stylesheet" href="css/style.css">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet'>
+</head>
+
+<body style="height:100%">
+<div class="site-container">
+  <div class="site-pusher">
+    
+    <header class="header">
+      <a href="" class="header_icon" id="header_icon"></a>
+      <a href="" class="header_logo">Galerija</a>
+      <nav class="menu">
+		<h2 class="logo_hidden">Galerija</h2>
+        <a href="index.html">Home</a>
+        <a href="admin.html">Admin</a>
+      </nav>
+    </header>
+    <div class="content">
+		<div class="table-container">
+			<div class="card shadow-z-1" id="card">
+				<input type="text" id="name" pattern="[A-Za-z]ŠšČčŽž" placeholder="Image name" required>
+				<input type="text" id="category" pattern="[A-Za-z]ŠšČčŽž" placeholder="Category" required>
+				<input type="file" id="picture" required>
+				<div class="card-actions">
+					<button type='button' class='card-action' id="addPic">Add Image</button>
+				</div>
+			</div>
+			<div class="table-responsive-vertical shadow-z-1">
+			  <table id="table" class="table table-hover table-mc-light-blue">
+				  <thead>
+					<tr>
+					  <th>ID</th>
+					  <th>Name</th>
+					  <th>Picture</th>
+					  <th>Category</th>
+					  <th>Action</th>
+					</tr>
+				  </thead>
+				  <tbody>
+				  </tbody>
+				</table>
+			  </div>
+			
+		</div>
+    </div> 
+  </div>
+</div>
+<footer><p>Burek</p></footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script  src="js/index.js"></script>
+<script  src="js/crude.js"></script>
+</body>
+
+</html>
